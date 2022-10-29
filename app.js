@@ -12,6 +12,10 @@ app.get("/about", (req, res) => {
   res.sendFile(__dirname + "/views/about.html");
 });
 
+app.get("/works", (req, res) => {
+  res.sendFile(__dirname + "/views/works.html");
+});
+
 app.listen(port, () => {
   console.log("App listening on port 300");
 });
